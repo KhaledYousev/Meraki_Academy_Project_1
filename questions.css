@@ -1,73 +1,64 @@
-body{
-    background-color: rgb(6, 41, 95);
-    margin:1rem;
-    padding: 1rem;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.multiplechoices{
+.choice-container {
     display: flex;
-    margin: 0.5rem;
-    width:auto;
-    border-radius: 4px;
-    background:rgb(18,93,255);
-    font-size: 3rem;
-    min-width: auto;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-shrink: auto;
-    justify-content: center;
-    flex-grow: initial;
-    flex-wrap: initial;
-}
-.multiplechoices:hover {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgb(86, 165, 235, 0.25);
+    background-color: rgb(5, 5, 5);
+  }
+  
+  .choice-container:hover {
     cursor: pointer;
-    box-shadow:aqua;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-.choiceletter{
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .choice-prefix {
     padding: 2rem 2.5rem;
-    color:white
-}
-.choicetext{
-    padding:2rem;
-    width:100%;
-}
-.correct {
-    background: green;
-}
-.incorrect {
-    background: red;
-}
-/* Head Counters*/
-
-#head {
-display: flex;
-justify-content: space-between;
-}
-.headprefix {
+    background-color:orange;
+    color: white;
+  }
+  
+  .choice-text {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  
+  .correct {
+    background-color: #28a745;
+  }
+  
+  .incorrect {
+    background-color: #dc3545;
+  }
+  
+  /* HUD */
+  
+  #hud {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hud-prefix {
     text-align: center;
     font-size: 2rem;
-
-}
-.head-main-text{
+  }
+  
+  .hud-main-text {
     text-align: center;
-
-}
-#progressline{
-    width:20rem;
-    height: 3rem;
-    border:0.2rem solid rgb(11,223,36);
-    margin-top: 2rem;
-    border-radius: 50px;
-    overflow: hidden;
-}
-#progresslineF {
-    height: 100%;
-    background: rgb(11,223,36) ;
+  }
+  
+  #progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #56a5eb;
+    margin-top: 1.5rem;
+  }
+  
+  #progressBarFull {
+    height: 3.4rem;
+    background-color: #56a5eb;
     width: 0%;
-}
-@media screen and (max-width: 768px) {
-    .multiplechoices {
-        min-width: 40rem;
-    }
-}
+  }
+  

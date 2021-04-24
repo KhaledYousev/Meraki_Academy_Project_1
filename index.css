@@ -27,7 +27,7 @@ h2 {
 #home {
     width: 100vw;
     height: 100vh;
-    display: grid;
+    display: flex;
     grid-area: auto;
     justify-content: center;
     align-items: center;
@@ -36,7 +36,7 @@ h2 {
     padding: auto;
 }
 .main{
-    display: grid;
+    display: flex;
     grid-area: auto;
     grid-template-columns: 1fr 2fr 1fr;
     justify-content: center;
@@ -44,7 +44,7 @@ h2 {
      
 }
 .p1 {
-    display: grid;
+    display: flex;
     grid-area: auto;
     grid-template-columns: 1fr 2fr 1fr;
     justify-content: center;

@@ -8,8 +8,7 @@ let questions = [
     answer: 1
   },
   {
-    question:
-      "What date Cohort 2 had been started?",
+    question:"What date Cohort 2 had been started?",
     choice1: "26/4/2021",
     choice2: "27/4/2021",
     choice3: "28/04/2021",
@@ -17,18 +16,74 @@ let questions = [
     answer: 3
   },
   {
-    question: " How do you write 'MoMo' in an alert box?",
+    question: "How do you write 'MoMo' in an alert box?",
     choice1: "msgBox('MoMo');",
     choice2: "alertBox('MoMo');",
     choice3: "alert('MOMO');",
     choice4: "nono of the above",
     answer: 4
+  },
+  {
+    question: "What is Meraki meaning?",
+    choice1: "Doing something with soul",
+    choice2: "Being correct",
+    choice3: "Love",
+    choice4: "Nono of the above",
+    answer: 1
+  },
+  {
+    question: "What is A value? A=5+55+5+'55'",
+    choice1: "555555",
+    choice2: "120",
+    choice3: "6555",
+    choice4: "nono of the above",
+    answer: 3
+  },
+  {
+    question:"How many legs does a lobester have?",
+    choice1: "Ten",
+    choice2: "Six",
+    choice3: "Eight",
+    choice4: "Sixteen",
+    answer: 1
+  },
+  {
+    question: "Hippopotomonstrosesquippedaliophobia is the fear of____",
+    choice1: "Unusual Names",
+    choice2: "Fluffy Clouds",
+    choice3: "Large Hippos",
+    choice4: "Long Word",
+    answer: 4
+  },
+  {
+    question: "Can you cough or sneeze in your deep sleep?",
+    choice1: "Yes",
+    choice2: "No",
+    choice3: "COVID-19",
+    choice4: "None of the above",
+    answer: 2
+  },
+  {
+    question: "Which came first?",
+    choice1: "iPhone",
+    choice2: "Facebook",
+    choice3: "Netflix",
+    choice4: "Samsung (Android)",
+    answer: 2
+  },
+  {
+    question: "What is the second largest country(in size) in the world?",
+    choice1: "USA",
+    choice2: "China",
+    choice3: "Canada",
+    choice4: "Russia",
+    answer: 3
   }
 ];
 
 
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = questions.length;
 
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));

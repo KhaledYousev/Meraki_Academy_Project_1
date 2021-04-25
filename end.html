@@ -5,12 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./end.css">
-
-    <title>Document</title>
+    <title>The End</title>
 </head>
-
 <body>
-    Under Construction Check Back Later
+  
+  <div class="container">
+    <div id="end" class="flex-center flex-column">
+      <h1 id="finalScore"></h1>
+      <form>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter Your Name"
+        />
+        <button
+          type="submit"
+          class="btn"
+          id="saveScoreBtn"
+          onclick="saveHighScore(event)"
+          disabled
+        >
+          Save
+        </button>
+        <img src="./latqlaq.jpeg" id="img1" alt="">
+        
+      </form>
+      <a class="btn" href="./questions.html">Play Again</a>
+      <a class="btn" href="./index.html">Go Home</a>
+    </div>
+  </div>
+  <script src="./end.js"></script>
 </body>
 </html>

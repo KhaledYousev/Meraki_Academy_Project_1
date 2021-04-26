@@ -1,3 +1,5 @@
+document.body.style.zoom="59%"
+
 let questions = [
   {
     question: "What is the /Mafjoo3a/ element in HTML Display?",
